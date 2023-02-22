@@ -1,4 +1,4 @@
-[简体中文](README_zh_CN.md), [Italiano](README_it_IT.md).
+[简体中文](README_zh_CN.md), [Italiano](README_it_IT.md), [한국어](README_ko_KR.md).
 
 ## What can Chyrp Lite do for me?
 
