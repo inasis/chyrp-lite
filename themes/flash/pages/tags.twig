@@ -16,8 +16,6 @@ font-size: {{ tag.size + 100 }}%;
 {% endfor %}
 </div>
 {% else %}
-<div class="ribbon">
-<h3 class="ribbon">{{ "Nothing here yet!" | translate }}</h3>
-</div>
+<div class="ribbon">{{ "Nothing here yet!" | translate }}</div>
 {% endif %}
 {% endblock %}

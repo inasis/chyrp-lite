@@ -1,51 +1,60 @@
 <article class="post {{ post.feather }}{{ post.pinned ? ' pinned' : '' }}" id="post_{{ post.id }}">
 {% block content %}{% endblock %}
-{% if url('/') != self_url() %}
+
 <footer>
-
-{% if (module_enabled("tags") and post.tags_link is not empty) %}
-<div role="note" class="tags">
-  <a href="{{ url('tags') }}">{{ "Tags" | translate }}:</a> {{ post.tags_link | join(" ") }}
+{% if module_enabled("categorize") %}
+<div class="post-cate">
+{% if post.category is defined %}
+   <a href="{{ post.category.url }}" rel="tag">{{ "Post in category <strong>%s</strong>" | format(post.category.name) | oneof("[Untitled]" | translate) }}</a>
+{% endif %}
 </div>
 {% endif %}
+{% if (self_url() == url('/')) or
+(self_url() matches '{[?&]page=[0-9]+}') or
+(self_url() matches '{action=archive}') or
+(self_url() matches '{action=category}') or
+(self_url() matches '{action=search}') or
+(self_url() matches '{action=tag}') %}
+{% else %}
 
-{% if post.editable() or post.deletable() %}
-<div class="doaction admin">
-  {{ post.edit_link() }} {{ post.delete_link() }}
-</div>
+  {% if (module_enabled("tags") and post.tags_link is not empty) %}
+  <div class="tags">
+    {{ post.tags_link | join(" ") }}
+  </div>
+  {% endif %}
+
+  {% if post.editable() or post.deletable() %}
+  <div class="doaction admin">
+    {{ post.edit_link() }} {{ post.delete_link() }}
+  </div>
+  {% endif %}
+
+  <div class="tail">
+    {% if module_enabled("likes") %}
+    <div>{{ post.like_link ? post.like_link : "" }}</div>
+    {% endif %}
+
+    {% if module_enabled("pingable") and post.pingback_count is defined %}
+    <a href="{{ post.url() }}#pingbacks" rel="bookmark" title="{{ 'View pingbacks' | translate }}">{{ "%s pingback" | translate_plural("%s pingbacks", post.pingback_count) | format(post.pingback_count) }}</a>
+    {% endif %}
+
+    {% if module_enabled("comments") and post.comment_status is defined and post.comment_count is defined %}
+      {% if post.comment_status == "closed" %}
+      <div>{{ "Comments closed" | translate }}</div>
+      {% else %}
+      <div><a href="{{ post.url() }}#comments" rel="bookmark" title="{{ 'View comments' | translate }}">{{ "%s comment" | translate_plural("%s comments", post.comment_count) | format(post.comment_count) }}</a></div>
+      {% endif %}
+    {% endif %}
+
+    {% if module_enabled("rights") and post.rights_holder is defined %}
+      {% if post.rights_holder is not empty %}
+      <div>{{ "&copy; %s, %s." | translate | format(post.rights_holder, post.licence_link) }}</div>
+      {% else %}
+      <div>{{ "&copy; %s." | translate | format(post.licence_link) }}</div>
+      {% endif %}
+    {% endif %}
+  </div>
 {% endif %}
-
-<div role="note" class="tail">
-  {% if module_enabled("categorize") and post.category is defined %}
-  <a href="{{ post.category.url }}" rel="tag">{{ post.category.name | oneof("[Untitled]" | translate) }}</a> &bull;
-  {% endif %}
-
-  {% if module_enabled("likes") %}
-  {{ post.like_link ? post.like_link ~ "&bull;" : "" }}
-  {% endif %}
-
-  {% if module_enabled("pingable") and post.pingback_count is defined %}
-  <a href="{{ post.url() }}#pingbacks" rel="bookmark" title="{{ 'View pingbacks' | translate }}">
-  {{ "%s pingback" | translate_plural("%s pingbacks", post.pingback_count) | format(post.pingback_count) }}
-  </a>
-  {% endif %}
-
-  {% if module_enabled("comments") and post.comment_status is defined and post.comment_count is defined %}
-  {% if post.comment_status == "closed" %}&bull;{{ "Comments closed" | translate }}
-  {% else %}&bull; <a href="{{ post.url() }}#comments" rel="bookmark" title="{{ 'View comments' | translate }}">
-  {{ "%s comment" | translate_plural("%s comments", post.comment_count) | format(post.comment_count) }}
-  </a>
-  {% endif %}
-  {% endif %}
-
-  {% if module_enabled("rights") and post.rights_holder is defined %}&bull;
-  {% if post.rights_holder is not empty %}
-  {{ "&copy; %s, %s." | translate | format(post.rights_holder, post.licence_link) }}
-  {% else %}
-  {{ "&copy; %s." | translate | format(post.licence_link) }}
-  {% endif %}
-  {% endif %}
-</div>
 </footer>
-{% endif %}
+
 </article>

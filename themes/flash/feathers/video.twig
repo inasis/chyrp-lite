@@ -1,18 +1,50 @@
 {% extends "content" ~ DIR ~ "post.twig" %}
 
 {% block content %}
+<div class="hairpin">{{ "Video" | translate }}</div>
 {% if post.title is not empty %}
-<h2 class="post_title">
+<h2 class="post-title">
 <a href="{{ post.url() }}" rel="bookmark" title="{{ 'Permanent link to &#8220;%s&#8221;' | translate | format(post.title | striptags | normalize | fix(true)) }}">{{ post.title }}</a>
 </h2>
-<h6 class="post_byline">{{ "Written by %s" | translate | format(post.author.name) }}</h6>
+{% else %}
+<h2 class="post-title untitled">
+<a href="{{ post.url() }}" rel="bookmark">{{ "Untitled" | translate }}</a>
+</h2>
 {% endif %}
-{% if post.description is not empty %}
-<section class="description">
-{{ post.description }}
-</section>
-{% endif %}
-<section class="video">
-{{ post.video_player }}
-</section>
+
+<div class="post-meta">
+  <span>{% if post.status == "draft" %}
+  {{ "Draft" | translate }}
+  {% elseif post.status == "scheduled" %}
+  {{ "Scheduled" | translate }}
+  {% elseif post.pinned %}
+  {{ "Pinned" | translate }}
+  {% else %}
+  {{ "Posted at" | translate }} 
+  {{ post.created_at | time }}
+  {% endif %}</span>
+  <span>{{ "Written by %s" | translate | format(post.author.name) }}</span>
+</div>
+
+<div class="content">
+  {% if (self_url() == url('/')) or
+  (self_url() matches '{[?&]page=[0-9]+}') or
+  (self_url() matches '{action=archive}') or
+  (self_url() matches '{action=category}') or
+  (self_url() matches '{action=search}') or
+  (self_url() matches '{action=tag}') %}
+  <div class="description">
+  {{ post.description | striptags | normalize | slice(0, 100) }}
+  </div>
+  <a href="{{ post.url() }}" class="read-more continue-link" title="{{ 'Read more' | translate }}">{{ 'Read more' | translate }}</a>
+  {% else %}
+  <div class="video-wrapper">
+  {{ post.video_player }}
+  </div>
+  <div class="description">
+  {{ post.description }}
+  </div>
+  {% endif %}
+</div>
+
 {% endblock %}

@@ -2,25 +2,17 @@
 
 {% block content %}
 {% if posts.paginated is not empty or pages is not empty %}
-<div class="ribbon">
-<h3 role="status" class="ribbon">{{ "Search results for &#8220;%s&#8221;" | translate | format(search | fix) }}</h3>
-</div>
-{% else %}
-<div class="ribbon flash">
-<h3 role="status" class="ribbon">{{ "Your search did not return any results." | translate }}</h3>
-</div>
-{% endif %}
+<div class="ribbon">{{ "Search results for &#8220;%s&#8221;" | translate | format(search | fix) }}</div>
+
 {% for post in posts.paginated %}
 {% include(["feathers" ~ DIR ~ post.feather ~ ".twig", "feathers" ~ DIR ~ "missing.twig"]) %}
 {% endfor %}
 {% if posts.paginated is not empty and pages is not empty %}
-<div class="ribbon">
-<h3 class="ribbon">{{ "Pages" | translate }}</h3>
-</div>
+<div class="ribbon">{{ "Pages" | translate }}</div>
 {% endif %}
 {% for page in pages %}
 <article id="page_{{ page.id }}" class="page"> 
-<h2 class="page_title">
+<h2 class="page-title">
 <a href="{{ page.url() }}" rel="bookmark" title="{{ 'Permanent link to &#8220;%s&#8221;' | translate | format(page.title | striptags | normalize | fix(true)) }}">{{ page.title }}</a>
 </h2>
 <section>
@@ -28,4 +20,8 @@
 </section>
 </article>
 {% endfor %}
+
+{% else %}
+<div class="ribbon">{{ "Your search did not return any results." | translate }}</div>
+{% endif %}
 {% endblock %}

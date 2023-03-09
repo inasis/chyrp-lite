@@ -1,24 +1,49 @@
 {% extends "content" ~ DIR ~ "post.twig" %}
+{# Fixed: Added Read more link #}
+{# Fixed: Added breakpoint where "[?&]action=archive}" #}
+{# Fixed: Added breakpoint where "[?&]action=category}" #}
+{# Fixed: Added breakpoint where "[?&]action=tag}" #}
+{# Fixed: Added breakpoint where "[?&]page=[0-9]+" #}
+{# Fixed: Change section to div #}
 
 {% block content %}
+<div class="hairpin">{{ "Text" | translate }}</div>
 {% if post.title is not empty %}
-<h2 class="post_title"><a href="{{ post.url() }}" rel="bookmark" title="{{ 'Permanent link to &#8220;%s&#8221;' | translate | format(post.title | striptags | normalize | fix(true)) }}">{{ post.title }}</a></h2>
+<h2 class="post-title">
+  <a href="{{ post.url() }}" rel="bookmark" title="{{ 'Permanent link to &#8220;%s&#8221;' | translate | format(post.title | striptags | normalize | fix(true)) }}">{{ post.title }}</a>
+</h2>
+{% else %}
+<h2 class="post-title untitled">
+<a href="{{ post.url() }}" rel="bookmark">{{ "Untitled" | translate }}</a>
+</h2>
 {% endif %}
 
-<span class="post_meta">
-{% if post.status == "draft" %}{{ "Draft" | translate }} &bull;
-{% elseif post.status == "scheduled" %}{{ "Scheduled" | translate }} &bull;
-{% elseif post.pinned %}{{ "Pinned" | translate }} &bull;
-{% else %}{{ "Posted at" | translate }} {{ post.created_at | time }} &bull;
-{% endif %} 
-{{ "Written by %s" | translate | format(post.author.name) }}</span>
+<div class="post-meta">
+  <span>{% if post.status == "draft" %}
+  {{ "Draft" | translate }}
+  {% elseif post.status == "scheduled" %}
+  {{ "Scheduled" | translate }}
+  {% elseif post.pinned %}
+  {{ "Pinned" | translate }}
+  {% else %}
+  {{ "Posted at" | translate }} 
+  {{ post.created_at | time }}
+  {% endif %}</span>
+  <span>{{ "Written by %s" | translate | format(post.author.name) }}</span>
+</div>
 
-<section class="body">
-  {% if url('/') == self_url() %}
-  {{ post.body|striptags|normalize|slice(0, 100)|trim }}
-  <a href="{{ post.url() }}" class="read_more" title="{{ 'Read more' | translate }}">Read More</a>
+<div class="content">
+  {% if (self_url() == url('/')) or
+  (self_url() matches '{[?&]page=[0-9]+}') or
+  (self_url() matches '{action=archive}') or
+  (self_url() matches '{action=category}') or
+  (self_url() matches '{action=search}') or
+  (self_url() matches '{action=tag}') %}
+  {{ post.body | striptags | normalize | slice(0, 100) }}
+  <a href="{{ post.url() }}" class="read-more continue-link" title="{{ 'Read more' | translate }}">{{ 'Read more' | translate }}</a>
   {% else %}
   {{ post.body }}
   {% endif %}
-</section>
+</div>
+
 {% endblock %}
