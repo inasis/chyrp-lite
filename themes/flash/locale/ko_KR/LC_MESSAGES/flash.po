@@ -1,0 +1,290 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. This file is distributed under the same license as the Chyrp Lite package.
+#: themes/flash/layouts/default.twig:26
+msgid "Add Post"
+msgstr "게시물 추가"
+
+#: themes/flash/layouts/default.twig:28
+msgid "Feed"
+msgstr "피드"
+
+#: themes/flash/layouts/default.twig:54
+msgid "Newer posts"
+msgstr "최신 게시물"
+
+#: themes/flash/layouts/default.twig:55
+msgid "Older posts"
+msgstr "이전 게시물"
+
+#: themes/flash/layouts/default.twig:76
+msgid "Called from %s on line %d at %s seconds."
+msgstr "%s에서 %d 라인을 %s초에 호출하였습니다."
+
+#: themes/flash/content/aside.twig:4
+msgid "Search&hellip;"
+msgstr "검색&hellip;"
+
+#: themes/flash/content/aside.twig:4
+msgid "Search this blog"
+msgstr "블로그 검색"
+
+#: themes/flash/content/aside.twig:5
+msgid "Search"
+msgstr "검색"
+
+#: themes/flash/content/aside.twig:10
+msgid "Categories"
+msgstr "카테고리"
+
+#: themes/flash/content/aside.twig:13 themes/flash/content/aside.twig:31
+#: themes/flash/pages/view.twig:14
+msgid "[Untitled]"
+msgstr "[제목 없음]"
+
+#: themes/flash/content/aside.twig:19 themes/flash/pages/search.twig:11
+msgid "Pages"
+msgstr "페이지"
+
+#: themes/flash/content/aside.twig:28
+msgid "Archive"
+msgstr "보관소"
+
+#: themes/flash/content/aside.twig:37
+msgid "Related Posts"
+msgstr "관련 게시물"
+
+#: themes/flash/content/aside.twig:50
+msgid "Recent Posts"
+msgstr "최근 게시물"
+
+#: themes/flash/content/post.twig:8
+msgid "Post in category <strong>%s</strong>"
+msgstr "<strong>%s</strong>에 게시되었습니다"
+
+#: themes/flash/content/post.twig:35
+msgid "View pingbacks"
+msgstr "핑백 보기"
+
+#: themes/flash/content/post.twig:35
+msgid "%s pingback"
+msgid_plural "%s pingbacks"
+msgstr[0] "%s 핑백"
+
+#: themes/flash/content/post.twig:40
+msgid "Comments closed"
+msgstr "댓글을 작성할 수 없습니다"
+
+#: themes/flash/content/post.twig:42
+msgid "View comments"
+msgstr "댓글 보기"
+
+#: themes/flash/content/post.twig:42
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s 댓글"
+
+#: themes/flash/content/post.twig:48
+msgid "&copy; %s, %s."
+msgstr ""
+
+#: themes/flash/content/post.twig:50
+msgid "&copy; %s."
+msgstr ""
+
+#: themes/flash/content/comment.twig:3
+msgid "%s"
+msgstr ""
+
+#: themes/flash/content/comment.twig:5
+msgid "%s said"
+msgstr ""
+
+#: themes/flash/content/comment.twig:9
+msgid "This comment is awaiting moderation."
+msgstr "이 댓글은 검토를 기다리고 있습니다"
+
+#: themes/flash/feathers/audio.twig:7 themes/flash/feathers/photo.twig:7
+#: themes/flash/feathers/quote.twig:7 themes/flash/feathers/text.twig:7
+#: themes/flash/feathers/uploader.twig:7 themes/flash/feathers/video.twig:7
+msgid "Permanent link to &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221;에 대한 영구 링크"
+
+#: themes/flash/content/aside.twig:44 themes/flash/content/aside.twig:57
+#: themes/flash/feathers/audio.twig:11 themes/flash/feathers/link.twig:11
+#: themes/flash/feathers/photo.twig:11 themes/flash/feathers/text.twig:11
+#: themes/flash/feathers/uploader.twig:11 themes/flash/feathers/video.twig:11
+msgid "Untitled"
+msgstr "제목 없음"
+
+#: themes/flash/feathers/audio.twig:17 themes/flash/feathers/link.twig:17
+#: themes/flash/feathers/photo.twig:17 themes/flash/feathers/quote.twig:13
+#: themes/flash/feathers/text.twig:17 themes/flash/feathers/uploader.twig:17
+#: themes/flash/feathers/video.twig:17
+msgid "Draft"
+msgstr "초안"
+
+#: themes/flash/feathers/audio.twig:19 themes/flash/feathers/link.twig:19
+#: themes/flash/feathers/photo.twig:19 themes/flash/feathers/quote.twig:15
+#: themes/flash/feathers/text.twig:19 themes/flash/feathers/uploader.twig:19
+#: themes/flash/feathers/video.twig:19
+msgid "Scheduled"
+msgstr "예정"
+
+#: themes/flash/feathers/audio.twig:21 themes/flash/feathers/link.twig:21
+#: themes/flash/feathers/photo.twig:21 themes/flash/feathers/quote.twig:17
+#: themes/flash/feathers/text.twig:21 themes/flash/feathers/uploader.twig:21
+#: themes/flash/feathers/video.twig:21
+msgid "Pinned"
+msgstr "고정됨"
+
+#: themes/flash/feathers/audio.twig:23 themes/flash/feathers/link.twig:23
+#: themes/flash/feathers/photo.twig:23 themes/flash/feathers/quote.twig:19
+#: themes/flash/feathers/text.twig:23 themes/flash/feathers/uploader.twig:23
+#: themes/flash/feathers/video.twig:23
+msgid "Posted at"
+msgstr "작성일자"
+
+#: themes/flash/feathers/audio.twig:26 themes/flash/feathers/link.twig:26
+#: themes/flash/feathers/photo.twig:26 themes/flash/feathers/quote.twig:22
+#: themes/flash/feathers/text.twig:26 themes/flash/feathers/uploader.twig:26
+#: themes/flash/feathers/video.twig:26
+msgid "Written by %s"
+msgstr "글쓴이 %s"
+
+#: themes/flash/feathers/audio.twig:36 themes/flash/feathers/link.twig:34
+#: themes/flash/feathers/photo.twig:38 themes/flash/feathers/quote.twig:32
+#: themes/flash/feathers/text.twig:36 themes/flash/feathers/uploader.twig:35
+#: themes/flash/feathers/video.twig:34
+msgid "Read more"
+msgstr "더 읽기"
+
+#: themes/flash/feathers/missing.twig:4
+msgid "The post cannot be displayed because theme does not support it."
+msgstr "테마가 지원하지 않는 기능을 포함하고 있어 게시물을 출력할 수 없습니다."
+
+#: themes/flash/feathers/audio.twig:4
+msgid "Audio"
+msgstr "오디오"
+
+#: themes/flash/feathers/link.twig:4
+msgid "Link"
+msgstr "링크"
+
+#: themes/flash/feathers/photo.twig:4
+msgid "Photo"
+msgstr "사진"
+
+#: themes/flash/feathers/quote.twig:4
+msgid "Quote"
+msgstr "인용문"
+
+#: themes/flash/feathers/text.twig:10
+msgid "Text"
+msgstr "글"
+
+#: themes/flash/feathers/uploader.twig:4
+msgid "Uploader"
+msgstr "파일"
+
+#: themes/flash/feathers/uploader.twig:47
+msgid "File attachment"
+msgstr "첨부한 파일"
+
+#: themes/flash/feathers/video.twig:4
+msgid "Video"
+msgstr "동영상"
+
+#: themes/flash/pages/403.twig:5
+msgid "Forbidden."
+msgstr "금지"
+
+#: themes/flash/pages/404.twig:5
+msgid "Not found."
+msgstr "찾을 수 없음"
+
+#: themes/flash/pages/archive.twig:9 themes/flash/pages/archive.twig:12
+#: themes/flash/pages/archive.twig:20
+msgid "Archive of %s"
+msgstr "%s 아카이브"
+
+#: themes/flash/pages/archive.twig:30
+msgid "There aren't any posts in the timeframe you specified."
+msgstr "지정된 기간의 게시물이 존재하지 않습니다."
+
+#: themes/flash/pages/category.twig:5
+msgid "Posts in category &#8220;%s&#8221;"
+msgstr ""
+
+#: themes/flash/pages/drafts.twig:5
+msgid "Drafts"
+msgstr "초안"
+
+#: themes/flash/pages/drafts.twig:10
+msgid "You don't have any drafts"
+msgstr "초안이 없습니다"
+
+#: themes/flash/pages/index.twig:8
+msgid "No posts"
+msgstr "게시물이 없습니다"
+
+#: themes/flash/pages/page.twig:6 themes/flash/pages/search.twig:16
+#: themes/flash/pages/search.twig:5
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221;에 대한 검색 결과"
+
+#: themes/flash/pages/search.twig:25
+msgid "Your search did not return any results."
+msgstr "검색된 항목이 존재하지 않습니다."
+
+#: themes/flash/pages/tag.twig:5
+msgid "Posts tagged with &#8220;%s&#8221;"
+msgstr "&#8220;%s&#8221; 태그가 지정된 게시물"
+
+#: themes/flash/pages/tags.twig:6
+msgid "Tag cloud"
+msgstr "태그 클라우드"
+
+#: themes/flash/pages/tags.twig:19
+msgid "Nothing here yet!"
+msgstr "아직 아무것도 없습니다."
+
+#: themes/flash/pages/updated.twig:5
+msgid "Updated posts"
+msgstr "업데이트된 게시물"
+
+#: themes/flash/pages/updated.twig:10
+msgid "There aren't any updated posts"
+msgstr "업데이트된 게시물이 존재하지 않습니다"
+
+#: themes/flash/pages/view.twig:6
+msgid "Next post"
+msgstr "다음 게시물"
+
+#: themes/flash/pages/view.twig:7
+msgid "Previous post"
+msgstr "이전 게시물"
+
+#: themes/flash/pages/view.twig:11
+msgid "Pingbacks"
+msgstr "핑백"
+
+#: themes/flash/pages/view.twig:35
+msgid "Newer comments"
+msgstr "최신 댓글"
+
+#: themes/flash/pages/view.twig:36
+msgid "Older comments"
+msgstr "이전 댓글"

@@ -1,63 +1,72 @@
 #. This file is distributed under the same license as the Chyrp Lite package.
-
-#: themes/flash/content/comment.twig:3
-#, php-format
-msgid "%s:"
+#: themes/flash/layouts/default.twig:26
+msgid "Add Post"
 msgstr ""
 
-#: themes/flash/content/comment.twig:5
-#, php-format
-msgid "%s said:"
+#: themes/flash/layouts/default.twig:28
+msgid "Feed"
 msgstr ""
 
-#: themes/flash/content/comment.twig:9
-msgid "This comment is awaiting moderation."
+#: themes/flash/layouts/default.twig:54
+msgid "Newer posts"
 msgstr ""
 
-#: themes/flash/content/post.twig:6
-msgid "Tags"
+#: themes/flash/layouts/default.twig:55
+msgid "Older posts"
 msgstr ""
 
-#: themes/flash/content/post.twig:15
-#: themes/flash/feathers/audio.twig:6
-#: themes/flash/feathers/photo.twig:6
-#: themes/flash/feathers/quote.twig:6
-#: themes/flash/feathers/text.twig:6
-#: themes/flash/feathers/uploader.twig:6
-#: themes/flash/feathers/video.twig:6
-#: themes/flash/pages/archive.twig:31
-#: themes/flash/pages/page.twig:6
-#: themes/flash/pages/search.twig:24
-#, php-format
-msgid "Permanent link to &#8220;%s&#8221;"
+#: themes/flash/layouts/default.twig:76
+msgid "Called from %s on line %d at %s seconds."
 msgstr ""
 
-#: themes/flash/content/post.twig:17
-#: themes/flash/content/sidebar.twig:27
-#: themes/flash/layouts/default.twig:90
-msgid "Draft"
+#: themes/flash/content/aside.twig:4
+msgid "Search&hellip;"
 msgstr ""
 
-#: themes/flash/content/post.twig:19
-msgid "Scheduled"
+#: themes/flash/content/aside.twig:4
+msgid "Search this blog"
 msgstr ""
 
-#: themes/flash/content/post.twig:21
-msgid "Pinned"
+#: themes/flash/content/aside.twig:5
+msgid "Search"
 msgstr ""
 
-#: themes/flash/content/post.twig:27
-#: themes/flash/content/sidebar.twig:53
+#: themes/flash/content/aside.twig:10
+msgid "Categories"
+msgstr ""
+
+#: themes/flash/content/aside.twig:13
+#: themes/flash/content/aside.twig:31
 #: themes/flash/pages/view.twig:14
 msgid "[Untitled]"
 msgstr ""
 
-#: themes/flash/content/post.twig:34
+#: themes/flash/content/aside.twig:19
+#: themes/flash/pages/search.twig:11
+msgid "Pages"
+msgstr ""
+
+#: themes/flash/content/aside.twig:28
+msgid "Archive"
+msgstr ""
+
+#: themes/flash/content/aside.twig:37
+msgid "Related Posts"
+msgstr ""
+
+#: themes/flash/content/aside.twig:50
+msgid "Recent Posts"
+msgstr ""
+
+#: themes/flash/content/post.twig:8
+msgid "Post in category <strong>%s</strong>" 
+msgstr ""
+
+#: themes/flash/content/post.twig:35
 msgid "View pingbacks"
 msgstr ""
 
 #: themes/flash/content/post.twig:35
-#, php-format
 msgid "%s pingback"
 msgid_plural "%s pingbacks"
 msgstr[0] ""
@@ -67,311 +76,150 @@ msgstr[1] ""
 msgid "Comments closed"
 msgstr ""
 
-#: themes/flash/content/post.twig:43
+#: themes/flash/content/post.twig:42
 msgid "View comments"
 msgstr ""
 
-#: themes/flash/content/post.twig:44
-#, php-format
+#: themes/flash/content/post.twig:42
 msgid "%s comment"
 msgid_plural "%s comments"
 msgstr[0] ""
 msgstr[1] ""
 
-#: themes/flash/content/post.twig:51
-#, php-format
+#: themes/flash/content/post.twig:48
 msgid "&copy; %s, %s."
 msgstr ""
 
-#: themes/flash/content/post.twig:53
-#, php-format
+#: themes/flash/content/post.twig:50
 msgid "&copy; %s."
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:4
-#: themes/flash/layouts/default.twig:39
-msgid "Search&hellip;"
+#: themes/flash/content/comment.twig:3
+msgid "%s"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:4
-#: themes/flash/layouts/default.twig:39
-msgid "Search this blog"
+#: themes/flash/content/comment.twig:5
+msgid "%s said"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:5
-#: themes/flash/layouts/default.twig:40
-msgid "Search"
+#: themes/flash/content/comment.twig:9
+msgid "This comment is awaiting moderation."
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:7
-msgid "Links"
+#: themes/flash/feathers/audio.twig:7
+#: themes/flash/feathers/photo.twig:7
+#: themes/flash/feathers/quote.twig:7
+#: themes/flash/feathers/text.twig:7
+#: themes/flash/feathers/uploader.twig:7
+#: themes/flash/feathers/video.twig:7
+msgid "Permanent link to &#8220;%s&#8221;"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:9
-#: themes/flash/layouts/default.twig:60
-msgid "Blog"
+#: themes/flash/content/aside.twig:44
+#: themes/flash/content/aside.twig:57
+#: themes/flash/feathers/audio.twig:11
+#: themes/flash/feathers/link.twig:11
+#: themes/flash/feathers/photo.twig:11
+#: themes/flash/feathers/text.twig:11
+#: themes/flash/feathers/uploader.twig:11
+#: themes/flash/feathers/video.twig:11
+msgid "Untitled"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:12
-#: themes/flash/forms/user/controls.twig:9
-#: themes/flash/forms/user/register.twig:13
-#: themes/flash/layouts/default.twig:72
-msgid "Email"
+#: themes/flash/feathers/audio.twig:17
+#: themes/flash/feathers/link.twig:17
+#: themes/flash/feathers/photo.twig:17
+#: themes/flash/feathers/quote.twig:13
+#: themes/flash/feathers/text.twig:17
+#: themes/flash/feathers/uploader.twig:17
+#: themes/flash/feathers/video.twig:17
+msgid "Draft"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:15
-#: themes/flash/layouts/default.twig:75
-msgid "Feed"
+#: themes/flash/feathers/audio.twig:19
+#: themes/flash/feathers/link.twig:19
+#: themes/flash/feathers/photo.twig:19
+#: themes/flash/feathers/quote.twig:15
+#: themes/flash/feathers/text.twig:19
+#: themes/flash/feathers/uploader.twig:19
+#: themes/flash/feathers/video.twig:19
+msgid "Scheduled"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:19
-#: themes/flash/layouts/default.twig:82
-msgid "Admin"
+#: themes/flash/feathers/audio.twig:21
+#: themes/flash/feathers/link.twig:21
+#: themes/flash/feathers/photo.twig:21
+#: themes/flash/feathers/quote.twig:17
+#: themes/flash/feathers/text.twig:21
+#: themes/flash/feathers/uploader.twig:21
+#: themes/flash/feathers/video.twig:21
+msgid "Pinned"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:23
-#: themes/flash/layouts/default.twig:86
-msgid "Write"
+#: themes/flash/feathers/audio.twig:23
+#: themes/flash/feathers/link.twig:23
+#: themes/flash/feathers/photo.twig:23
+#: themes/flash/feathers/quote.twig:19
+#: themes/flash/feathers/text.twig:23
+#: themes/flash/feathers/uploader.twig:23
+#: themes/flash/feathers/video.twig:23
+msgid "Posted at"
 msgstr ""
 
-#: themes/flash/content/sidebar.twig:32
-#: themes/flash/forms/user/controls.twig:5
-#: themes/flash/layouts/default.twig:95
-msgid "Controls"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:35
-#: themes/flash/layouts/default.twig:98
-msgid "Log out"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:40
-#: themes/flash/forms/user/register.twig:5
-#: themes/flash/forms/user/register.twig:19
-#: themes/flash/layouts/default.twig:103
-msgid "Register"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:44
-#: themes/flash/forms/user/login.twig:5
-#: themes/flash/forms/user/login.twig:14
-#: themes/flash/layouts/default.twig:107
-msgid "Log in"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:49
-msgid "Categories"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:59
-#: themes/flash/pages/search.twig:18
-msgid "Pages"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:69
-msgid "Related Posts"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:78
-msgid "Recent Posts"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:89
-#: themes/flash/layouts/default.twig:78
-msgid "Archive"
-msgstr ""
-
-#: themes/flash/content/sidebar.twig:94
-#: themes/flash/pages/archive.twig:11
-msgid "F Y"
-msgstr ""
-
-#: themes/flash/feathers/audio.twig:8
-#: themes/flash/feathers/link.twig:7
-#: themes/flash/feathers/photo.twig:8
-#: themes/flash/feathers/quote.twig:8
-#: themes/flash/feathers/text.twig:8
-#: themes/flash/feathers/uploader.twig:8
-#: themes/flash/feathers/video.twig:8
-#, php-format
+#: themes/flash/feathers/audio.twig:26
+#: themes/flash/feathers/link.twig:26
+#: themes/flash/feathers/photo.twig:26
+#: themes/flash/feathers/quote.twig:22
+#: themes/flash/feathers/text.twig:26
+#: themes/flash/feathers/uploader.twig:26
+#: themes/flash/feathers/video.twig:26
 msgid "Written by %s"
 msgstr ""
 
+#: themes/flash/feathers/audio.twig:36
+#: themes/flash/feathers/link.twig:34
+#: themes/flash/feathers/photo.twig:38
+#: themes/flash/feathers/quote.twig:32
+#: themes/flash/feathers/text.twig:36
+#: themes/flash/feathers/uploader.twig:35
+#: themes/flash/feathers/video.twig:34
+msgid "Read more"
+msgstr ""
+
 #: themes/flash/feathers/missing.twig:4
-msgid "The post cannot be displayed because the theme does not support it."
+msgid "The post cannot be displayed because theme does not support it."
 msgstr ""
 
-#: themes/flash/feathers/uploader.twig:22
-msgid "File attachment:"
+#: themes/flash/feathers/audio.twig:4
+msgid "Audio"
 msgstr ""
 
-#: themes/flash/forms/comment/edit.twig:2
-msgid "Comment"
+#: themes/flash/feathers/link.twig:4
+msgid "Link"
 msgstr ""
 
-#: themes/flash/forms/comment/edit.twig:5
-msgid "Author"
+#: themes/flash/feathers/photo.twig:4
+msgid "Photo"
 msgstr ""
 
-#: themes/flash/forms/comment/edit.twig:8
-msgid "Author's website"
+#: themes/flash/feathers/quote.twig:4
+msgid "Quote"
 msgstr ""
 
-#: themes/flash/forms/comment/edit.twig:10
-msgid "Author's email"
+#: themes/flash/feathers/text.twig:10
+msgid "Text"
 msgstr ""
 
-#: themes/flash/forms/comment/edit.twig:15
-msgid "Timestamp"
+#: themes/flash/feathers/uploader.twig:4
+msgid "Uploader"
 msgstr ""
 
-#: themes/flash/forms/comment/edit.twig:18
-msgid "Status"
+#: themes/flash/feathers/uploader.twig:47
+msgid "File attachment"
 msgstr ""
 
-#: themes/flash/forms/comment/edit.twig:20
-msgid "Approved"
-msgstr ""
-
-#: themes/flash/forms/comment/edit.twig:21
-msgid "Denied"
-msgstr ""
-
-#: themes/flash/forms/comment/edit.twig:22
-msgid "Spam"
-msgstr ""
-
-#: themes/flash/forms/comment/edit.twig:27
-msgid "Email Notifications"
-msgstr ""
-
-#: themes/flash/forms/comment/edit.twig:35
-msgid "Save"
-msgstr ""
-
-#: themes/flash/forms/comment/edit.twig:36
-msgid "Cancel"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:3
-#, php-format
-msgid "%s's comment"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:5
-msgid "Your name"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:7
-msgid "Your email"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:9
-msgid "Your website"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:12
-msgid "Your comment"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:16
-msgid "Markdown is allowed."
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:18
-msgid "HTML tags allowed:"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:20
-msgid "HTML is not allowed."
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:24
-msgid "Notify me when others comment"
-msgstr ""
-
-#: themes/flash/forms/comment/new.twig:37
-msgid "Speak"
-msgstr ""
-
-#: themes/flash/forms/user/controls.twig:7
-msgid "Full name"
-msgstr ""
-
-#: themes/flash/forms/user/controls.twig:11
-msgid "Website"
-msgstr ""
-
-#: themes/flash/forms/user/controls.twig:13
-#: themes/flash/forms/user/reset_password.twig:7
-msgid "New password?"
-msgstr ""
-
-#: themes/flash/forms/user/controls.twig:15
-#: themes/flash/forms/user/reset_password.twig:9
-msgid "Confirm"
-msgstr ""
-
-#: themes/flash/forms/user/controls.twig:20
-msgid "Update"
-msgstr ""
-
-#: themes/flash/forms/user/login.twig:7
-#: themes/flash/forms/user/lost_password.twig:7
-#: themes/flash/forms/user/register.twig:7
-msgid "Username"
-msgstr ""
-
-#: themes/flash/forms/user/login.twig:9
-#: themes/flash/forms/user/register.twig:9
-#: themes/flash/forms/user/register.twig:11
-msgid "Password"
-msgstr ""
-
-#: themes/flash/forms/user/login.twig:15
-msgid "Help!"
-msgstr ""
-
-#: themes/flash/forms/user/lost_password.twig:5
-msgid "Lost password"
-msgstr ""
-
-#: themes/flash/forms/user/lost_password.twig:11
-#: themes/flash/forms/user/reset_password.twig:16
-msgid "Submit"
-msgstr ""
-
-#: themes/flash/forms/user/register.twig:11
-msgid "(again)"
-msgstr ""
-
-#: themes/flash/forms/user/reset_password.twig:5
-msgid "Reset password"
-msgstr ""
-
-#: themes/flash/info.php:3
-msgid "flash"
-msgstr ""
-
-#: themes/flash/info.php:6
-msgid "A minimalist responsive theme for Chyrp Lite."
-msgstr ""
-
-#: themes/flash/layouts/default.twig:53
-msgid "Newer posts"
-msgstr ""
-
-#: themes/flash/layouts/default.twig:54
-msgid "Older posts"
-msgstr ""
-
-#: themes/flash/layouts/default.twig:111
-msgid "Menu"
-msgstr ""
-
-#: themes/flash/layouts/default.twig:121
-#, php-format
-msgid "Called from %s on line %d at %s seconds."
+#: themes/flash/feathers/video.twig:4
+msgid "Video"
 msgstr ""
 
 #: themes/flash/pages/403.twig:5
@@ -382,45 +230,45 @@ msgstr ""
 msgid "Not found."
 msgstr ""
 
-#: themes/flash/pages/archive.twig:42
-#: themes/flash/pages/archive.twig:47
-#: themes/flash/pages/archive.twig:57
-#, php-format
+#: themes/flash/pages/archive.twig:9
+#: themes/flash/pages/archive.twig:12
+#: themes/flash/pages/archive.twig:20
 msgid "Archive of %s"
 msgstr ""
 
-#: themes/flash/pages/archive.twig:68
+#: themes/flash/pages/archive.twig:30
 msgid "There aren't any posts in the timeframe you specified."
 msgstr ""
 
-#: themes/flash/pages/category.twig:6
-#, php-format
+#: themes/flash/pages/category.twig:5
 msgid "Posts in category &#8220;%s&#8221;"
 msgstr ""
 
-#: themes/flash/pages/drafts.twig:6
+#: themes/flash/pages/drafts.twig:5
 msgid "Drafts"
 msgstr ""
 
-#: themes/flash/pages/drafts.twig:13
+#: themes/flash/pages/drafts.twig:10
 msgid "You don't have any drafts"
 msgstr ""
 
-#: themes/flash/pages/index.twig:9
+#: themes/flash/pages/index.twig:8
 msgid "No posts"
 msgstr ""
 
-#: themes/flash/pages/search.twig:6
-#, php-format
+#: themes/flash/pages/page.twig:6
+#: themes/flash/pages/search.twig:16
+msgid "Permanent link to &#8220;%s&#8221;"
+
+#: themes/flash/pages/search.twig:5
 msgid "Search results for &#8220;%s&#8221;"
 msgstr ""
 
-#: themes/flash/pages/search.twig:10
+#: themes/flash/pages/search.twig:25
 msgid "Your search did not return any results."
 msgstr ""
 
-#: themes/flash/pages/tag.twig:6
-#, php-format
+#: themes/flash/pages/tag.twig:5
 msgid "Posts tagged with &#8220;%s&#8221;"
 msgstr ""
 
@@ -428,15 +276,15 @@ msgstr ""
 msgid "Tag cloud"
 msgstr ""
 
-#: themes/flash/pages/tags.twig:20
+#: themes/flash/pages/tags.twig:19
 msgid "Nothing here yet!"
 msgstr ""
 
-#: themes/flash/pages/updated.twig:6
+#: themes/flash/pages/updated.twig:5
 msgid "Updated posts"
 msgstr ""
 
-#: themes/flash/pages/updated.twig:13
+#: themes/flash/pages/updated.twig:10
 msgid "There aren't any updated posts"
 msgstr ""
 
@@ -459,4 +307,3 @@ msgstr ""
 #: themes/flash/pages/view.twig:36
 msgid "Older comments"
 msgstr ""
-
