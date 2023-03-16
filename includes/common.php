@@ -284,13 +284,11 @@
             code:503
         );
 
-    # Exit if the config file is missing.
-    if (!file_exists(INCLUDES_DIR.DIR."config.json.php"))
-        error(
-            __("Service Unavailable"),
-            __("This resource cannot respond because it is not configured."),
-            code:503
-        );
+    # Redirect if the config file is missing.
+    if (!file_exists(INCLUDES_DIR.DIR."config.json.php")) {
+        header("Location: install.php");
+        exit();
+    }
 
     # Start the timer that keeps track of Chyrp's load time.
     timer_start();
